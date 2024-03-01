@@ -1,7 +1,7 @@
 import {Suspense} from "react";
 import {Canvas} from "@react-three/fiber";
 import {OrbitControls} from "@react-three/drei";
-import Scene from "./models/Scene";
+import Scene from "./Scene";
 const App = () => (
     <Canvas camera={{position: [0, 2, 5], zoom: 1}}>
       <OrbitControls />
@@ -12,11 +12,11 @@ const App = () => (
             angle={0.3}
             penumbra={1}
             intensity={2}
-            castShadow
+            castShadow={0}
         />
 
         <Suspense fallback={null}>
-        <Scene/>
+        <Scene />
         </Suspense>
         </Canvas>
         );
