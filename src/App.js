@@ -17,9 +17,9 @@ function App() {
   );
 }
 
-import {Suspense) from "react";
+import {Suspense} from "react";
 import {Canvas} from "@react-three/fiber";
-import {OrbitControls) from "@react-three/drei";
+import {OrbitControls} from "@react-three/drei";
 import Scene from "./models/Scene";
 const App = () => (
     <Canvas camera={{position: [0, 2, 5], zoom: 1}}>
