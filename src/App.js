@@ -1,22 +1,3 @@
-import logo from './logo.svg';
-import scene from './scene.bin';
-import './App.css';
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={scene} className="App-logo" alt="Scene" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a className="App-link" href="https://reactjs.org"  target="_blank" rel="noopener noreferrer">
-          Изучайте реакт и возвращайтесь к нам.
-        </a>
-      </header>
-    </div>
-  );
-}
-
 import {Suspense} from "react";
 import {Canvas} from "@react-three/fiber";
 import {OrbitControls} from "@react-three/drei";
